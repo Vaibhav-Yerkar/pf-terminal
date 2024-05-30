@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Arcade';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Arcade'), url('./Webfonts/Arcade.ttf') format('woff');
+}
+@font-face {
+    font-family: 'CozetteVector';
+    font-style: normal;
+    font-weight: 400;
+    src: local('CozetteVector'), url('./Webfonts/CozetteVector.ttf') format('woff');
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: 'CozetteVector', sans-serif;
+}
+
+.heading{
+    top:0;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    width: 100%;
+    background-color: #000000;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: fixed;
+    span{
+        width: 100%;
+        font-size: 10rem;
+        font-family: 'Arcade', sans-serif;
+        color: #00f327;
+        letter-spacing: 1rem;
+    };
+    p{
+        font-size: 1.5rem;
+        padding-right: 10%;
+        color: #00e1ff;
+        letter-spacing: 0.4rem;
+        text-align: end;
+        transform: translateY(-3rem);
+    };
+}
+.terminal-body{
+    padding-left: 2rem;
+    overflow-wrap: break-word;
+    padding-top: 50vh;
+    font-size: 1.2rem;
+    height: 50vh;
+    color: #00f4f0;
+    cursor: text;
+    .welcome-comment{
+        color: #109bbd;
+    }
+    .command-line{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0.2rem;
+        .input-cmd{
+            width: 80%;
+            font-size: 1.2rem;
+            outline: none;
+            border: none;
+            color: #ffd91b;
+        }
+        .color-gy{
+            color:rgb(117, 255, 182);
+        }
+    }
+}
+.cmd-result{
+    margin: 2px 0 8px 0px;
+    .cmd-result-err{
+        color: #df2525;
+    }
+    .cmd-result-success{
+        color: #00d121;
+    }
+    .cmd-fs-ls{
+        margin-top: 0.2rem;
+        color: #afafaf;
+    }
+    .cmd-help{
+        color:#00af75
+    }
+    .help_cmd-title{
+        color:#ff8968;
+        text-shadow: 0px 0px 0px #fe8f70;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(86, 86, 86); 
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: #2d2d2d;
+}
